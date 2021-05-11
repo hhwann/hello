@@ -25,37 +25,64 @@ button {
     float: right;
     margin: 30px;
 }
-#nav {
-    width: 15%;
+#container {
+    width: 1900px;
     height: 1200px;
+    float: left;
+    margin: 0;
+    border: 1px solid red;
+}
+#menu {
+    width: 300px;
+    height: 850px;
     float: left;
     margin: 0;
     background-color: #D0CECE;
+    border: 1px solid red;
 }
-#container {
-    width: 85%;
-    height: 1200px;
+#menu2 {
+    width: 1590px;
+    height: 850px;
     float: left;
     margin: 0;
+    border: 1px solid red;
 }
 .dday_box {
-    width: 80%;
+    width: 250px;
     height: 30px;
     border: 1px solid black;
     margin: 50px auto;
     background-color: #929292;
     text-align: center;
 }
-.dday_box {
+.day_box {
     width: 200px;
     margin: 50px;
     margin-bottom: 10px;
+    border: 1px solid red;
 }
-
-.dday_set_box {
-    width: 200px;
+.memo_box {
+    width: 500px;
+    height: 500px;
     margin: 50px;
-    margin-bottom: 10px;
+    border: 1px solid #869BC1;
+    float: left;
+    background-color: #DAE3F3;
+}
+.album_box {
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    border: 1px solid black;
+    float: left;
+    background-color: #A5A5A5;
+}
+.album_content {
+    width: 138px;
+    height: 138px;
+    background-color: #FFC000;
+    margin: 14px;
+    float: left;
 }
 
 </style>
@@ -65,18 +92,29 @@ button {
         <p>Calendiary</p>
         <button>로그아웃</button>
     </div>
-    <div id="nav">
-        <div class="dday_box">D-Day</div>
-
-    </div>
     <div id="container">
-        <div class="dday_box">
-            <p>디데이 설정</p>
+        <div id="menu">
+            <div class="dday_box">D-Day</div>
         </div>
-        <div class="dday_set_box">
-
+        <div id="menu2">
+            <div class="day_box">
+                <p>3월 1일</p>
+                <p>기록</p>
+            </div>
+            <div class="memo_box">
+            </div>
+            <div class="album_box">
+                <div class="album_content"></div>
+                <div class="album_content"></div>
+                <div class="album_content"></div>
+                <div class="album_content"></div>
+                <div class="album_content"></div>
+                <div class="album_content"></div>
+                <div class="album_content"></div>
+                <div class="album_content"></div>
+                <div class="album_content"></div>
+            </div>
         </div>
-    
-
+    </div>
 </body>
 </html>
